@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김태우 - 자기소개 포트폴리오</title>
+    <style>
+        :root {
+            --bg-color: #fafafa;
+            --text-color: #2d3748;
+            --primary-color: #3182ce;
+            --primary-light: #ebf8ff;
+            --accent-color: #319795;
+            --accent-light: #e6fffa;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --secondary-text: #718096;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* 헤더 섹션 */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+            border: 3px solid #ffffff;
+            box-shadow: 0 10px 15px -3px rgba(49, 130, 206, 0.2);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a202c;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--secondary-text);
+            font-weight: 500;
+        }
+
+        /* 공통 섹션 스타일 */
+        section {
+            background-color: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--primary-light);
+            z-index: 1;
+            border-radius: 2px;
+        }
+
+        p {
+            color: #4a5568;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+        }
+
+        p strong {
+            color: #1a202c;
+        }
+
+        /* 기술 스택 배지 */
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(49, 130, 206, 0.1);
+        }
+
+        .tag.accent {
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            border: 1px solid rgba(49, 151, 149, 0.1);
+        }
+
+        /* 프로젝트 리스트 */
+        .project-card {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .project-card:first-child {
+            padding-top: 0;
+        }
+
+        .project-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 4px;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            margin-bottom: 8px;
+        }
+
+        /* 연락처 스타일 */
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 12px;
+            display: flex;
+            font-size: 1.05rem;
+        }
+
+        .contact-info li:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            width: 90px;
+            color: var(--secondary-text);
+        }
+
+        .contact-value a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        /* 푸터 */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 헤더 섹션 -->
+        <header>
+            <div class="profile-avatar">🧑‍💻</div>
+            <h1>김태우</h1>
+            <div class="subtitle">🎓 동국대학교 WISE캠퍼스 컴퓨터공학과 23학번</div>
+        </header>
+
+        <!-- 자기소개 섹션 -->
+        <section id="about">
+            <h2>소개 (About Me)</h2>
+            <p>안녕하세요! 꾸준한 성장을 목표로 컴퓨터공학을 전공하고 있는 23살 <strong>김태우</strong>입니다.</p>
+            <p>현재 동국대학교 WISE캠퍼스에서 학업(학번: 2023212597)에 매진하며 개발자로서의 기본기를 다지고 있습니다. 배운 지식을 바탕으로 새로운 문제를 해결하고, 가치 있는 결과물을 만들어내는 과정에 큰 흥미를 느낍니다.</p>
+        </section>
+
+        <!-- 기술 스택 섹션 -->
+        <section id="skills">
+            <h2>관심 분야 및 기술 (Skills)</h2>
+            <p>학교 강의와 개인 학습을 통해 아래와 같은 기술들을 공부하고 경험을 쌓아가고 있습니다.</p>
+            <div class="tech-tags">
+                <span class="tag">C / C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag accent">HTML / CSS</span>
+                <span class="tag accent">Git / GitHub</span>
+            </div>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section id="projects">
+            <h2>수행 프로젝트 / 과제 (Projects)</h2>
+            
+            <div class="project-card">
+                <div class="project-title">🎯 개인 깃허브 포트폴리오 구축</div>
+                <div class="project-desc">HTML과 CSS를 활용하여 나를 소개하는 반응형 웹페이지를 만들고 깃허브에 업로드한 프로젝트입니다.</div>
+                <p style="font-size: 0.9rem; color: var(--secondary-text);">Stack: HTML, CSS</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">💻 (자율 컨텐츠 예시: 전공 과제명 입력)</div>
+                <div class="project-desc">알고리즘 구현이나 전공 수업에서 진행했던 간단한 프로그래밍 과제 내용을 이곳에 작성합니다.</div>
+                <p style="font-size: 0.9rem; color: var(--secondary-text);">Stack: Python / C++ 등</p>
+            </div>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact">
+            <h2>연락처 (Contact)</h2>
+            <ul class="contact-info">
+                <li>
+                    <span class="contact-label">이메일</span>
+                    <span class="contact-value"><a href="mailto:tyooni0319@gmail.com">tyooni0319@gmail.com</a></span>
+                </li>
+                <li>
+                    <span class="contact-label">깃허브</span>
+                    <span class="contact-value"><a href="https://github.com" target="_blank">github.com/본인아이디</a></span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <p>&copy; 2026 Kim Tae Woo. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
