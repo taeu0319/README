@@ -33,4 +33,4 @@
 * **김태우 (Kim Tae Woo)**
 * **소속:** 동국대학교 WISE캠퍼스 컴퓨터공학과 23학번
 * **Email:** tyooni0319@gmail.com
-* **GitHub:** [https://github.com/본인아이디](https://github.com/본인아이디)
+* **GitHub:** [https://github.com/taeu0319](https://github.com/taeu0319)
